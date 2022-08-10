@@ -48,4 +48,4 @@ jobs:
         echo "void loop() {}" >> src/main.ino
 
     - name: Run PlatformIO
-      run: pio ci --board=${{ matrix.board }} src
+      run: pio ci --board=${{ matrix.board }} --lib="." .
